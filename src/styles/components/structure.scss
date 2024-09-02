@@ -1,0 +1,75 @@
+.structure {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: (576px)) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    @media (max-width: (576px)) {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    height: 185px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: var(--color-background-gray);
+    @media (max-width: (576px)) {
+      height: auto;
+      position: relative;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &-img {
+      height: 185px;
+      @media (max-width: (576px)) {
+        display: none;
+      }
+      img {
+        height: 105%;
+      }
+    }
+
+    &-title {
+      font-size: 35px;
+      color: var(--color-black);
+      font-weight: 700;
+      margin-bottom: 15px;
+      @media (max-width: (576px)) {
+        font-size: 20px;
+      }
+    }
+
+    &-list {
+      padding-left: 20px;
+      display: flex;
+      gap: 30px;
+      @media (max-width: (576px)) {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &--li {
+        font-size: 18px;
+        color: var(--color-text-gray);
+        font-weight: 300;
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+.structure__item.reverse {
+  flex-direction: row-reverse;
+}

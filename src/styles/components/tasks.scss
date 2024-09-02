@@ -1,0 +1,54 @@
+.tasks {
+  padding-top: 100px;
+  background-color: var(--color-white);
+  @media (max-width: (576px)) {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    width: 560px;
+    height: 222px;
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    border-radius: 15px;
+    background-color: var(--color-background-gray);
+    @media (max-width: (576px)) {
+      height: auto;
+      width: 350px;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &-wrapper {
+      max-width: 285px;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: var(--color-black);
+    }
+
+    &-descr {
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 300;
+      color: var(--color-text-gray);
+    }
+
+    &-img {
+      @media (max-width: (576px)) {
+        max-height: 220px;
+        width: auto;
+      }
+    }
+  }
+}

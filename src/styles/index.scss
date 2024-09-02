@@ -1,0 +1,27 @@
+@import 'custom-bootstrap.scss';
+@import '~bootstrap/scss/bootstrap';
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'settings.scss';
+
+// components
+@import './components/header.scss';
+@import './components/navbar.scss';
+@import './components/mobileMenu.scss';
+@import './components/promo.scss';
+@import './components/cases.scss';
+@import './components/reviews.scss';
+@import './components/numbers.scss';
+@import './components/tasks.scss';
+@import './components/structure.scss';
+@import './components/plan.scss';
+@import './components/faq.scss';
+@import './components/contacts.scss';
+// @import './components/footer.scss';
+
+// ui
+@import './components/button.scss';
+@import './components/burgerButton.scss';
+@import './components/languageToggle.scss';
+@import './components/accordion.scss';
+@import './components/slider.scss';

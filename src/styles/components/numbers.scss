@@ -1,0 +1,46 @@
+.numbers {
+  padding-top: 100px;
+  background-color: var(--color-white);
+  @media (max-width: (576px)) {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @media (max-width: (576px)) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    width: 360px;
+    height: 314px;
+    padding: 30px 40px 40px 30px;
+    border-radius: 15px;
+    background-color: var(--color-background-gray);
+    @media (max-width: (576px)) {
+      margin: 0 auto;
+    }
+
+    &-img {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    &-descr {
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 300;
+      color: var(--color-text-gray);
+    }
+  }
+}
